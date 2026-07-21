@@ -1,28 +1,34 @@
-# Task 1: Python Basics
+# Task 1: Data Cleaning
 
 ## Objective
 
-The objective of this task is to learn the fundamentals of Python programming, including variables, user input, data types, and formatted output.
+The objective of this task is to clean a raw dataset by identifying and handling missing values, removing duplicate records, correcting incorrect data formats, and preparing the dataset for further analysis.
 
-## Program Description
+## Problem Statement
 
-This Python program:
+Raw datasets often contain missing values, duplicate records, and inconsistent data formats that can affect the accuracy of data analysis. This task focuses on cleaning the dataset to improve its quality and reliability.
 
-* Displays a welcome message.
-* Accepts the user's name and age as input.
-* Calculates the user's birth year (approximate).
-* Prints a personalized greeting using f-strings.
+## Tasks Performed
+
+* Identified missing (null) values.
+* Handled missing values by removing or replacing them where appropriate.
+* Removed duplicate records.
+* Corrected incorrect data formats such as dates, numbers, and text.
+* Verified the cleaned dataset for consistency and accuracy.
 
 ## Technologies Used
 
 * Python 3
+* Pandas
 * Visual Studio Code (VS Code)
 
-## Files Included
+## Project Structure
 
-```
-Task-01-Python-Basics/
-│── hello.py
+```text
+Task-01-Data-Cleaning/
+│── data_cleaning.py
+│── raw_dataset.csv
+│── cleaned_dataset.csv
 │── README.md
 └── screenshots/
     ├── code.png
@@ -32,37 +38,35 @@ Task-01-Python-Basics/
 ## How to Run
 
 1. Install Python 3.
-2. Open the project folder in VS Code.
-3. Open the terminal.
-4. Run the following command:
+2. Install the required library:
 
 ```bash
-python hello.py
+pip install pandas
 ```
 
-## Sample Output
+3. Open the project folder in Visual Studio Code.
+4. Run the program:
 
-```
-Welcome to Python Basics!
-
-Enter your name: Aboli
-Enter your age: 20
-
-Hello, Aboli!
-You are 20 years old.
-Your approximate birth year is 2006.
-
-Thank you for using the program!
+```bash
+python data_cleaning.py
 ```
 
-## Learning Outcomes
+## Expected Output
 
-* Understanding Python syntax
-* Working with variables and data types
-* Taking user input using `input()`
-* Converting data using `int()`
-* Using f-strings for formatted output
-* Running Python programs from the terminal
+* Missing values handled successfully.
+* Duplicate records removed.
+* Data formats corrected.
+* A cleaned dataset saved as `cleaned_dataset.csv`.
+
+## Key Skills
+
+* Data Cleaning
+* Handling Missing Values
+* Removing Duplicates
+* Data Preparation
+* Data Formatting
+* Python Basics
+* Pandas
 
 ## Author
 
